@@ -1,26 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import { withContext } from './context';
-import { PrimaryButton } from '@fluentui/react';
+import ROUTE from './constant/router'
+import Home from './demos/home'
+import Header from './demos/header'
 function AppBase(props) {
   console.log(props)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {props.context.test}
-        </a>
-        <PrimaryButton text="Click me!"/>
-      </header>
+      <div>
+        <Header></Header>
+      </div>
+      <Router>
+        <Switch>
+          <Route path={ROUTE.HOME}>
+            <Home/>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

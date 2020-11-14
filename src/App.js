@@ -12,16 +12,22 @@ function AppBase(props) {
   console.log(props)
   return (
     <div className="App">
-      <div>
-        <Header></Header>
+      <div className="ms-Grid" dir="ltr">
+        <div className="ms-Grid-row">
+          <div>
+            <Header/>
+          </div>
+        </div>
+        <div className="ms-Grid-row">
+          <Router>
+            <Switch>
+              <Route path={ROUTE.HOME}>
+                <Home />
+              </Route>
+            </Switch>
+          </Router>
+        </div>
       </div>
-      <Router>
-        <Switch>
-          <Route path={ROUTE.HOME}>
-            <Home/>
-          </Route>
-        </Switch>
-      </Router>
     </div>
   );
 }

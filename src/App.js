@@ -8,6 +8,8 @@ import { withContext } from './context';
 import ROUTE from './constant/router'
 import Home from './demos/home'
 import Header from './demos/header'
+import AllPies from './demos/pieVote';
+
 function AppBase(props) {
   console.log(props)
   return (
@@ -21,6 +23,9 @@ function AppBase(props) {
         <div className="ms-Grid-row">
           <Router>
             <Switch>
+              <Route path={ROUTE.PIEDEMO}>
+                <AllPies/>
+              </Route>
               <Route path={ROUTE.HOME}>
                 <Home />
               </Route>

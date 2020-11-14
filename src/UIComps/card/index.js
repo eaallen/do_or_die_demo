@@ -1,2 +1,3 @@
 import Card from './Card'
-export {Card}
+import FlipCard from './FlipCard'
+export {Card,FlipCard}

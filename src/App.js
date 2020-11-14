@@ -20,7 +20,7 @@ function AppBase(props) {
             <Header/>
           </div>
         </div>
-        <div className="ms-Grid-row">
+        <div className="ms-Grid-row container">
           <Router>
             <Switch>
               <Route path={ROUTE.PIEDEMO}>

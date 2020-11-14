@@ -5,13 +5,13 @@ export default function AllPies() {
     const cards = [1, 2, 3, 4]
     return <div className="text-center">
         <div>
-            <FlipCard/>
         </div>
+        
         <div id="pies">
             {cards.map(x => {
                 return <div className="row" key={x}>
                     <div className="col-sm-8 mx-auto mb-5">
-                        <Card />
+                        <FlipCard/>
                     </div>
                 </div>
             })}

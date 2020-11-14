@@ -9,7 +9,8 @@ import ROUTE from './constant/router'
 import Home from './demos/home'
 import Header from './demos/header'
 import AllPies from './demos/pieVote';
-
+import { initializeIcons } from '@uifabric/icons';
+initializeIcons();
 function AppBase(props) {
   console.log(props)
   return (

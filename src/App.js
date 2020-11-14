@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { withContext } from './context';
-
+import { PrimaryButton } from '@fluentui/react';
 function AppBase(props) {
   console.log(props)
   return (
@@ -19,6 +19,7 @@ function AppBase(props) {
         >
           {props.context.test}
         </a>
+        <PrimaryButton text="Click me!"/>
       </header>
     </div>
   );

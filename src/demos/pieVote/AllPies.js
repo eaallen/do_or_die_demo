@@ -11,7 +11,7 @@ export default function AllPies() {
             {cards.map(x => {
                 return <div className="row" key={x}>
                     <div className="col-sm-8 mx-auto mb-5">
-                        <Card/>
+                        <Card title={`title: ${x}`}/>
                     </div>
                 </div>
             })}

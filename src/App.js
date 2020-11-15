@@ -24,6 +24,9 @@ function AppBase(props) {
         <div className="ms-Grid-row container">
           <Router>
             <Switch>
+            <Route path={ROUTE.CLOUDFUNC}>
+                <AllPies/>
+              </Route>
               <Route path={ROUTE.PIEDEMO}>
                 <AllPies/>
               </Route>

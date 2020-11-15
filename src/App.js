@@ -10,6 +10,7 @@ import Home from './demos/home'
 import Header from './demos/header'
 import AllPies from './demos/pieVote';
 import { initializeIcons } from '@uifabric/icons';
+import CloudFunctions from './demos/cloudFunctions';
 initializeIcons();
 function AppBase(props) {
   console.log(props)
@@ -25,7 +26,7 @@ function AppBase(props) {
           <Router>
             <Switch>
             <Route path={ROUTE.CLOUDFUNC}>
-                <AllPies/>
+                <CloudFunctions/>
               </Route>
               <Route path={ROUTE.PIEDEMO}>
                 <AllPies/>
